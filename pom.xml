@@ -33,6 +33,5 @@
       </plugin>
     </plugins>
     <finalName>my-app-${version}</finalName>
-
   </build>
 </project>
