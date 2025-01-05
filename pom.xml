@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.sametp</groupId>
   <artifactId>jenkins-docker-integration</artifactId>
-  <version>1.0.0</version>
+  <version>1.0.2</version>
   <name>jenkins-docker-integration</name>
   <parent>
     <groupId>org.springframework.boot</groupId>

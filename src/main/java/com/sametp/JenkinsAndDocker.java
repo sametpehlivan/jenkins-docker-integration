@@ -23,4 +23,11 @@ public class JenkinsAndDocker {
         logger.info(message);
         return message;
     }
+    @GetMapping("/v2")
+    @ResponseBody
+    public String projectUpdate(){
+        String message = "*********** UPDATED APPLICATION IS UP ********";
+        logger.info(message);
+        return message;
+    }
 }
