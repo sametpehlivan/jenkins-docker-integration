@@ -17,7 +17,7 @@ pipeline{
         stage("GET APPLICATION VERSION"){
             steps{
                 script {
-                    def version = bat(script: "mvnw -q -Dexec.executable='echo' -Dexec.args='${project.version}' --non-recursive exec:exec", returnStdout: true).trim()
+                    def versionNumber = bat(script: "mvnw -q -Dexec.executable='echo' -Dexec.args='${project.version}' --non-recursive exec:exec", returnStdout: true).trim()
                     // OR
                         //def version = bat(script: "mvnw org.apache.maven.plugins:maven-help-plugin:3.1.0:evaluate -Dexpression=\"project.version\"", returnStdout: true).trim()
                         //def versionNumber = version.split("\n").find { it =~ /^[0-9]+\.[0-9]+\.[0-9]+$/ }
